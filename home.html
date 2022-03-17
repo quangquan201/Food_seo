@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="vi">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FastFood | Ecommerce Website Design</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap" 
+        rel="stylesheet">
+    </head>
+    <body>
+        <header class="header">
+
+            <a href="home.html" class="logo"><i class="fas fa-utensils"></i> FastFood </a>
+            <nav class="navbar">
+                <a href="#home">Trang chủ</a>
+                <a href="#products">Đồ ăn</a>
+                <a href="#popular">Phổ biến</a>
+                <a href="aboutus">Về chúng tôi</a>
+                <a href="#contact">Liên hệ</a>
+                <a href="#danhgia">Đánh giá</a>
+            </nav>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div class="icons">
+                <div class="fas fa-shopping-cart" id="cart-btn"></div>
+                <a href="login.html"><div class="fas fa-user" id="login-btn"></div></a>
+            </div>
+            <div id="myModal" class="modal">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title">Giỏ Hàng</h5>
+                            <span class="close">&times;</span>
+                        </div>
+                        <div class="modal-body">
+                            <div class="cart-row">
+                                <span class="cart-item cart-header cart-column">Sản Phẩm</span>
+                                <span class="cart-price cart-header cart-column">Giá</span>
+                                <span class="cart-quantity cart-header cart-column">Số Lượng</span>
+                            </div>
+                            <div class="cart-items">
+                                <div class="cart-row">
+                                <div class="cart-item cart-column">
+                                    <img class="cart-item-image" src="img/p-1.jpg" alt="burger" width="100" height="100">
+                                    <span class="cart-item-title">Burger 3 tầng</span>
+                                </div>
+                                <span class="cart-price cart-column">50000đ</span>
+                                <div class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input" type="number" value="1">
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="cart-row">
+                                <div class="cart-item cart-column">
+                                    <img class="cart-item-image" src="img/p-5.jpg" alt="soda" width="100" height="100">
+                                    <span class="cart-item-title">Soda blue ocean</span>
+                                </div>
+                                <span class="cart-price cart-column">25000đ</span>
+                                <div class="cart-quantity cart-column">
+                                    <input class="cart-quantity-input" type="number" value="2">
+                                    <button class="btn btn-danger" type="button">Xóa</button>
+                                </div>
+                            </div>
+                            <div class="cart-total">
+                                <strong class="cart-total-title">Tổng Cộng:</strong>
+                                <span class="cart-total-price">100000đ</span>
+                            </div>
+                        </div>
+
+                        <div class="modal-footer">
+                            <button type="button" class="btn close-footer">Đóng</button>
+                            <button type="button" class="btn order">Thanh Toán</button>
+                        </div>
+                    </div>
+                </div>
+        </header>
+        <section class="home" id="home">
+            <div class="row">
+                <div class="col-2">
+                    <h3 align="center">Giải quyết cơn đói của bạn một cách <span>nhanh chóng!</span></h3>
+                    <p>Không cần đi đâu xa cũng có thể thưởng thức hamburger và 
+                        nhâm nhi gà rán cùng gia đình ngay tại nhà trong mùa dịch. 
+                        Còn chần chờ gì mà không đặt hàng ngay!!!</p>
+                    <a href="#" class="btn"><strong>Order now &#10132;</strong></a>
+                </div>
+                <div class="col-2">
+                    <img src="img/home-img.png">
+                </div>
+            </div>
+        </section>
+        <section class="speciality" id="speciality">
+            <h1 class="heading"><span>Menu</span></h1>
+            <div class="box-container">
+                <div class="box">
+                    <img class="image" src="img/s-img-1.jpg" alt="">
+                    <div class="content">
+                        <img src="img/hamburger.png" width="50px" height="50px" alt="hamburger icon">
+                        <h3>Burger</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="img/s-img-2.jpg" alt="">
+                    <div class="content">
+                        <img src="img/pizza.png" width="50px" height="50px" alt="pizza icon">
+                        <h3>Pizza</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="img/s-img-3.jpg" alt="">
+                    <div class="content">
+                        <img src="img/-ice-cream_89753.png" width="55px" height="55px" alt="icecream icon">
+                        <h3>Kem</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="img/g-6.jpg" alt="">
+                    <div class="content">
+                        <img src="img/fried-chicken.png" width="50px" height="50px" alt="chicken icon">
+                        <h3>Gà rán</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="img/s-img-4.jpg" alt="">
+                    <div class="content">
+                        <img src="img/soda.png" width="50px" height="50px" alt="soda icon">
+                        <h3>Nước</h3>
+                        <p></p>
+                    </div>
+                </div>
+                <div class="box">
+                    <img class="image" src="img/s-img-5.jpg" alt="">
+                    <div class="content">
+                        <img src="img/cupcake.png" width="50px" height="50px" alt="cupcake icon">
+                        <h3>Bánh</h3>
+                        <p></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="popular" id="popular">
+            <h1 class="heading"><span>phổ biến</span></h1>
+
+            <div class="box-container">
+                <div class="box">
+                    <span class="price"> 50000đ </span>
+                    <img class="img" src="img/p-1.jpg" alt="burger">
+                    <h3 class="content">Burger 3 tầng</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="box">
+                    <span class="price"> 15000đ </span>
+                    <img class="img" src="img/p-4.jpg" alt="cupcake">
+                    <h3 class="content">Cupcake nho</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="box">
+                    <span class="price">31000đ/1 miếng</span>
+                    <img class="img" src="img/p-2.jpg" alt="chicken">
+                    <h3 class="content">Gà rán sốt cay</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="box">
+                    <span class="price">25000đ</span>
+                    <img class="img" src="img/p-5.jpg" alt="soda">
+                    <h3 class="content">Soda blue ocean</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="box">
+                    <span class="price">15000đ</span>
+                    <img class="img" src="img/p-6.jpg" alt="cream">
+                    <h3 class="content">Kem nhiệt đới</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+                <div class="box">
+                    <span class="price">150000đ</span>
+                    <img class="img" src="img/p-3.jpg" alt="pizza">
+                    <h3 class="content">Pizza Hải Sản</h3>
+                    <div class="starts">
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                    </div>
+                    <a href="#" class="btn">Thêm vào giỏ hàng</a>
+                </div>
+            </div>
+        </section>
+        <section class="steps">
+            <div class="box">
+                <img src="img/step-1.jpg" alt="">
+                <h3>Lựa chọn đồ ăn bạn yêu thích</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-2.jpg" alt="">
+                <h3>Giao hàng nhanh chóng và miễn phí</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-3.jpg" alt="">
+                <h3>Thanh toán tiện lợi</h3>
+            </div>
+            <div class="box">
+                <img src="img/step-4.jpg" alt="">
+                <h3>Thưởng thức đồ ăn ngon miệng</h3>
+            </div>
+        </section>
+        <section class="footer">
+            <div class="box-container">
+                <div class="box">
+                    <h3> FastFood <i class="fas fa-utensils"></i> </h3>
+                    <p>Đem đến cho bạn trải nghiệm tuyệt vời nhất!</p>
+                    <div class="share">
+                        <a href="#" class="fab fa-facebook-f"></a>
+                        <a href="#" class="fab fa-twitter"></a>
+                        <a href="#" class="fab fa-instagram"></a>
+                    </div>
+                </div>
+        
+                <div class="box" id="contact">
+                    <h3>Liên hệ</h3>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +123-456-7890 </a>
+                    <a href="#" class="links"> <i class="fas fa-phone"></i> +111-222-3333 </a>
+                    <a href="#" class="links"> <i class="fas fa-envelope"></i> 1952xxxx@gmail.com </a>
+                    <a href="#" class="links"> <i class="fas fa-map-marker-alt"></i> Microsoft Teams </a>
+                </div>
+        
+                <div class="box">
+                    <h3>Di chuyển đến</h3>
+                    <a href="#" class="links"> <i class="fas fa-arrow-right"></i> Trang chủ </a>
+                </div>
+        
+                <div class="box">
+                    <h3>Thông báo</h3>
+                    <p>Đăng ký nhận thông báo mới nhất từ chúng tôi</p>
+                    <input type="email" placeholder="your email" class="email">
+                    <input type="submit" value="Gửi" class="btn">
+                    <img src="img/payment.png" class="payment-img" alt="">
+                </div>
+        
+            </div>
+        
+            <div class="credit"> created by <span> Nhóm 2 </span> | Welcome </div>
+        
+        </section>
+        <!-- scroll top button  -->
+        <a href="#home" class="fas fa-angle-up" id="scroll-top"></a>
+        <!-- loader  -->
+        <div class="loader-container">
+            <img src="img/loader.gif" alt="">
+        </div>
+        <!-- custom js file link  -->
+    </body>
+    <script src="script.js" defer></script>
+    <script src="home.js" defer></script>
+</html>
